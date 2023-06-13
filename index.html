@@ -7,7 +7,32 @@
 	<meta name="keywords" content="photographe, photographie, portfolio, shooting, retouches, album photos">
 	<meta name="author" content="Nina Carducci">
 	<title>Nina Carducci - Photographe Professionnelle</title>
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<!-- Meta tags pour le référencement local -->
+    <meta name="geo.region" content="FR">
+    <meta name="geo.placename" content="Bordeaux">
+    <meta name="format-detection" content="telephone=no"> <!-- Empêche la détection automatique des numéros de téléphone -->
+	<!-- Meta tags pour les informations de contact -->
+    <meta name="address" content="68 avenue Alsace-Lorraine, 33200 Bordeaux">
+    <meta name="telephone" content="05 56 67 78 89">
+    <meta name="business_hours" content="Mo-Fr 10:00-19:00">
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Nina Carducci - Photographe Professionnelle" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://ninacarducci.github.io/" />
+	<meta property="author" content="Nina Carducci" />
+	<meta property="og:image" content="https://ninacarducci.github.io/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"/>
+	<meta property="og:description" content="Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer." />
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@https://ninacarducci.github.io/">
+	<meta name="twitter:title" content="Nina Carducci - Photographe Professionnelle">
+	<meta name="twitter:description" content="Devenir photographe était pour moi une évidence. 
+	Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels,
+	 voilà ce qui me fait vibrer.">
+	<meta name="twitter:creator" content="@NinaCarducci">
+	<meta name="twitter:image" content="https://ninacarducci.github.io/assets/images/nina.png">
+
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +41,40 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "Dataset",
+		  "name": "Nina Carducci",
+		  "description": "Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer. Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos."
+		}
+	</script>
+	<script type="application/ld+json">
+		[
+		  {
+			"@context": "http://schema.org",
+			"@type": "Dataset",
+			"name": "Shooting photo",
+			"description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos 350€/demi journée Matériel, déplacement inclus"
+		  },
+		  {
+			"@context": "http://schema.org",
+			"@type": "Dataset",
+			"name": "Retouches",
+			"description": "Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications 50€/photo 2 AR par photo"
+		  },
+		  {
+			"@context": "http://schema.org",
+			"@type": "Dataset",
+			"name": "Album photos",
+			"description": "Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé 400€ album A4 30 pages recto/verso"
+		  }
+		]
+		</script>
+	
 </head>
 <body>
+	
 <div class="top-header">
 	<h3 class="name">Nina Carducci</h3>
 	<div class="nav">   
@@ -38,15 +95,15 @@
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 		</div>
-		<div class="carousel-inner">
+		<div itemscope itemtype="https://schema.org/CollectionPage" class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="...">
+				<img itemprop="images" src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif" class="d-block w-100" alt="...">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" alt="...">
+				<img itemprop="images" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif" class="d-block w-100" alt="...">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="...">
+				<img itemprop="images" src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.avif" class="d-block w-100" alt="...">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -61,12 +118,12 @@
 </div>
 <section id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.png" alt="À propos de moi">
+		<img itemprop="images" src="./assets/images/nina.avif" alt="À propos de moi">
 	</div>
 	<div id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+		<h3 itemprop="name" class="about-me__title">A propos de moi</h3>
+		<p itemprop="description" class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+		<p itemprop="description">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </section>
@@ -74,15 +131,15 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-lightbox="gallery-images" data-title="Portrait 1" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="Image 1"/>
-			<img data-lightbox="gallery-images" data-title="Portrait 2" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="Image 2"/>
-			<img data-lightbox="gallery-images" data-title="Portrait 3" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="Image 3"/>
-			<img data-lightbox="gallery-images" data-title="Portrait 4" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="Image 4"/>
-			<img data-lightbox="Portrait" data-title="Portrait 5" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg" alt="Image 5"/>
-			<img data-lightbox="Mariages" data-title="Portrait 6" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt="Image 6"/>
-			<img data-lightbox="Portrait" data-title="Portrait 7" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg" alt="Image 7"/>
-			<img data-lightbox="Concert" data-title="Portrait 8" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="Image 8"/>
-			<img data-lightbox="Entreprises" data-title="Portrait 9" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="Image 9"/>
+			<img data-gallery-tag="Concert" itemprop="images" data-lightbox="gallery-images" data-title="Portrait 1" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif" alt="Image 1"/>
+			<img data-gallery-tag="Entreprises" itemprop="images" data-lightbox="gallery-images" data-title="Portrait 2" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_1.avif" alt="Image 2"/>
+			<img data-gallery-tag="Entreprises" itemprop="images" data-lightbox="gallery-images" data-title="Portrait 3" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif" alt="Image 3"/>
+			<img data-gallery-tag="Mariages" itemprop="images" data-lightbox="gallery-images" data-title="Portrait 4" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif" alt="Image 4"/>
+			<img data-gallery-tag="Portrait" itemprop="images" data-lightbox="gallery-images" data-title="Portrait 5" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif" alt="Image 5"/>
+			<img data-gallery-tag="Mariages" itemprop="images" data-lightbox="gallery-images" data-title="Portrait 6" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif" alt="Image 6"/>
+			<img data-gallery-tag="Portrait" itemprop="images" data-lightbox="gallery-images" data-title="Portrait 7" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.avif" alt="Image 7"/>
+			<img data-gallery-tag="Concert" itemprop="images" data-lightbox="gallery-images" data-title="Portrait 8" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif" alt="Image 8"/>
+			<img data-gallery-tag="Entreprises" itemprop="images" data-lightbox="gallery-images" data-title="Portrait 9" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" alt="Image 9"/>
 		</div>
 	</div>
 	<div class="quote">
@@ -95,15 +152,15 @@
 	</div>
 </section>
 <section id="services">
-	<h3 class="title">Mes services</h3>
+	<h1 class="title">Mes services</h1>
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
-				<h3>Shooting photo</h3>
+				<h2>Shooting photo</h3>
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 			</div>
 			<div class="service__price">
-				<h4>350€/demi journée</h4>
+				<h3>350€/demi journée</h3>
 				<span>Matériel, déplacement inclus</span>
 			</div>
 
@@ -141,20 +198,20 @@
 <section id="contact">
 	<div class="container">
 		<div class="form-container">
-			<h3>Une question ? Une demande de devis ?</h3>
+			<h1>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="#" method="post">
 				<label for="name">Nom</label>
-				<input type="text" name="nom" id="nom" required>
+				<input type="text" name="name" id="name"required>
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email" required>
 				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10" required></textarea>
-				<input id="input" type="submit" value="Envoyer"/>
+				<input type="submit" value="Envoyer"/>
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.png" alt="Appareil photo">
+			<img itemprop="images" src="./assets/images/camera.avif" alt="Appareil photo">
 		</div>
 	</div>
 </section>
