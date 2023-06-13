@@ -221,6 +221,7 @@
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
+    
       $.each(tags, function(index, value) {
         tagItems += `<li class="nav-item active">
                 <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
@@ -244,6 +245,7 @@
 
       var tag = $(this).data("images-toggle");
 
+
       $(".gallery-item").each(function() {
         $(this)
           .parents(".item-column")
@@ -258,6 +260,6 @@
             .show(300);
         }
       });
-    }
+    } 
   };
 })(jQuery);
